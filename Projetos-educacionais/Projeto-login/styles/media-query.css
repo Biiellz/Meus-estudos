@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/* typical device breakpoints
+-----------------------
+pequeno até 600px
+celular ate 768
+tablet ate 992
+deskotps ate 1200
+maiores acima de 1200
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    /*config tablet*/
+
+    body{
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
+    #login{
+        width: 80vw;
+        height: 338px;
+    }
+
+    #img{
+        float: left; /*deixa a imagem do lado dentro da section*/
+        width: 40%;
+        height: 100%;
+    }
+
+    #form{
+        float: right;
+        width: 60%;
+        height: 100%;
+    }
+
+    #form p{
+    font-size: 1.3em;
+}
+}
+
+@media screen and (min-width: 992px){
+    
+    body{
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
+    #login{
+        width: 950px;
+        height: 400px;
+    }
+
+    #img{
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    #form{
+        float: left;
+        width: 50%;
+    }
+
+    #form p{
+    font-size: 1.5em;
+    margin: 20px 0px;
+}
+}

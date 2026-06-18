@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+    <header>
+        <p>Calculadora de IMC</p>
+    </header>
+    <main>
+        <Section>
+            <div class="section">
+                <h1>Calcule seu índice de massa corporal</h1>
+                <article>
+                    
+                    <div class="div" id="peso">
+                        <label for="ipeso">Peso (kg)</label> <br>
+                        <input type="number" name="peso" id="ipeso" placeholder="75">
+                    </div>
+                    <div class="div" id="altura">
+                        <label for="ipeso">Altura (m)</label> <br>
+                        <input type="number" name="altura" id="ialtura" placeholder="1,70">
+                    </div>
+                </article>
+
+                <div id="calcular">
+                    <button  class="botao" onclick="calcular()">Calcular</button>
+                </div>
+
+                <div class="div" id="res">
+                    <p>Seu IMC é:</p> <br>
+                    <p>Classificação:</p>
+                </div>
+            </div>
+        </Section>
+    </main>
+    <footer>
+        <p>@Criado por Gabriel Siqueira Braga</p>
+    </footer>
+    <script src="Scripts/script.js"></script>
+</body>
+</html>

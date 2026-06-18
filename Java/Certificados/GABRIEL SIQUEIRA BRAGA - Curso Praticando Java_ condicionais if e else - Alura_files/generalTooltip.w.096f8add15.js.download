@@ -1,0 +1,1 @@
+"use strict";!function(){var e=document.querySelector(".generalTooltip__description");if(null!=e){var t=function(){e.classList.toggle("generalTooltip__description--enabled")};e.addEventListener("mouseover",t),e.addEventListener("mouseout",t)}}();

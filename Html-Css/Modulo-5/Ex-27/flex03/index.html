@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexible box</title>
+    <style>
+        .conteiner{
+            background-color: salmon;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /*flex-flow: row wrap;  shorthand*/
+            height: 120px;
+            justify-content: center; /*organiza os itens justificando-os*/
+            justify-content: space-between; /*espaçoo igual entre iens*/
+        }
+
+        .item{
+            background-color: aqua;
+            border: 1px solid black;
+            text-align: center;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="a">exemplo de boloco a</div>
+        <div class="item">exemplo de boloco b</div>
+        <div class="item">exemplo de boloco c</div>
+        <div class="item">exemplo de boloco d</div>
+        <div class="item">exemplo de boloco e</div>
+        <div class="item">exemplo de boloco f</div>
+        <div class="item">exemplo de boloco g</div>
+    </div>
+</body>
+</html>

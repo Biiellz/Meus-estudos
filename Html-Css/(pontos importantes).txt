@@ -1,0 +1,35 @@
+- As cores são de extrema importância em um site por vários motivos (psicologia das cores)
+
+aninhamento = um dentro doo outro
+
+                    Sites Uteis:
+
+    - "adobe color", "paletton.com" e "coolors" Site pra ver a paleta de cores
+
+    - "Pexels" - pesquisar Imagens/videos
+
+    - "Handbrake" - transormar o .mp4 em outro
+
+    - "vimeo" - pegar videos externos igual o youtube so q mais profissional
+
+                    Git:
+    - repositório local
+    - mantem versoes do software
+                    
+                    Github:
+
+    - repositório remoto
+    - backups
+
+                    Felxible Boxes
+
+    - caixas flexiveis
+    - eixos seguem a direção
+    - main é o principal
+    - cross é o transversal
+    - jusify content = alinha no eixo principal
+    - align itens = alinha no eixo transversal
+    - align content = alinha no eixo tranversal quando empacotados
+    - align self = alinha no eixo vertical
+
+                    Grid layout

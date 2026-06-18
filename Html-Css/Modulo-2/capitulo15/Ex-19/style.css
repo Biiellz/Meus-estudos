@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/*
+ID é # e unicco
+Class é . e multiplo
+
+Cores 
+#1E4959
+#2C5F73
+#F2F2F2
+#737373
+#0D0D0D
+*/
+body{
+    background-color: #F2F2F2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #1E4959;
+}
+
+h1#principal{
+    text-align: center;
+    background-color: #1E4959;
+    color: #F2F2F2;
+}
+
+h2{
+    color: #2C5F73;
+}
+
+.basico{/* classe so usa o .?*/
+    color: rgb(123, 182, 34);
+    font-weight: bold;
+}
+
+.intermediario{
+    color: rgb(199, 199, 56);
+}
+
+.avancado{
+    color: red;
+}
+
+.destaque{
+    background-color: rgba(250, 250, 0, 0.375);
+}

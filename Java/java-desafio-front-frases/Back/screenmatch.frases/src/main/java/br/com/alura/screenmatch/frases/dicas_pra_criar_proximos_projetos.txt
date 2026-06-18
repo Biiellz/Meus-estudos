@@ -1,0 +1,12 @@
+* Importante testar depois de cada passo se está funcionando corretamente pra menos problemas futuros e consequentemente saber em qual passo  aconteceu o problema.
+* descrever melhor o passo 3 depois
+
+1 - Spring initializer e botar as dependencias de web, jpa, postgre e dev tools
+
+2 - Criar as classes que tenham tabela no banco e Conectar ao banco de dados com as variaveis e vefiricar as tabelas
+
+3 - criar para as classes:
+    - controller (O que conecta ao front)
+    - DTO (record / Modelo)
+    - Repostitory (O que conecta ao banco de dados)
+    - Service (Metodos)

@@ -1,0 +1,7 @@
+medidas absolutas: cm, *px, pt, pc in (polegadas), mm
+
+medidas relativas: **em, rem, vw, %, vh, em  
+
+16 px = 1 em = tamanho normal do site
+
+pegar 3 ou 4 fontes pra um site. Mais que isso é bagunça 
