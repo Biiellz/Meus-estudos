@@ -1,13 +1,10 @@
 package br.com.alura.adopet.api.validacoes;
 
-import br.com.alura.adopet.api.DTO.SolicitacaoAdocaoDTO;
-import br.com.alura.adopet.api.exception.ValidacaoException;
+import br.com.alura.adopet.api.excpetion.ValidacaoException;
 import br.com.alura.adopet.api.model.Adocao;
-import br.com.alura.adopet.api.model.Pet;
 import br.com.alura.adopet.api.model.StatusAdocao;
 import br.com.alura.adopet.api.model.Tutor;
 import br.com.alura.adopet.api.repository.AdocaoRepository;
-import br.com.alura.adopet.api.repository.PetRepository;
 import br.com.alura.adopet.api.repository.TutorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -15,7 +12,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-public class ValidacaoTutorComAdocaoEmAndamento implements ValidacaoSolicitacaoAdocao{
+public class ValidacaoTutorComAdocaoEmAndamento implements ValidacaoSolicitacaoAdocao {
 
     @Autowired
     private AdocaoRepository adocaoRepository;
@@ -23,13 +20,14 @@ public class ValidacaoTutorComAdocaoEmAndamento implements ValidacaoSolicitacaoA
     @Autowired
     private TutorRepository tutorRepository;
 
-    public void validar(SolicitacaoAdocaoDTO dto){
+    public void validar(br.com.alura.adopet.api.dto.SolicitacaoAdocaoDTO dto) {
         List<Adocao> adocoes = adocaoRepository.findAll();
         Tutor tutor = tutorRepository.getReferenceById(dto.idTutor());
         for (Adocao a : adocoes) {
-            if (a.getPet() == tutorRepository && a.getStatus() == StatusAdocao.AGUARDANDO_AVALIACAO) {
-                throw new ValidacaoException("Pet já está aguardando avaliação para ser adotado!");
+            if (a.getTutor() == tutor && a.getStatus() == StatusAdocao.AGUARDANDO_AVALIACAO) {
+                throw new ValidacaoException("Tutor já possui outra adoção aguardando avaliação!");
             }
         }
     }
+
 }
